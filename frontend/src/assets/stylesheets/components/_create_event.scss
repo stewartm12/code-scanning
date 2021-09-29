@@ -1,0 +1,95 @@
+#submit-event-btn:focus {
+  outline: none !important;
+}
+
+#description-wrapper textarea {
+  resize: none;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  height: 60px;
+  padding: 8px;
+  outline: none;
+}
+
+#submit-event-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-event-btn {
+  margin: 25px 0px;
+  padding: 10px 31px;
+  border-radius: 25px;
+  border: 2px solid $light-green;
+  background-color: $light-green;
+  color: white;
+  font-size: 18px;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+#submit-event-btn:hover {
+  background-color: $light-green;
+  border-color: $light-green;
+  transform: scale(1.15);
+}
+
+.event-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    z-index: 5;
+    
+}
+
+.event-input {
+    padding: 7px;
+    padding-left: 10px;
+    background-color: $hover-gray;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: none;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+    font-family: $ssp;
+}
+
+
+.event-input:focus {
+    background-color: $lightest-green;
+    border: 2px solid $green;
+}
+
+.event-input:hover {
+    background-color: $lightest-green;
+}
+
+.create-label {white-space: nowrap;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: $ssp;
+  color: $green;
+  font-weight: 600;
+}
+
+#description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 125px;
+  font-family: $ssp;
+  width: 100%;
+  margin-top: 18px;
+
+  label {
+    margin-bottom: 10px;
+  }
+}
+
+.event-form input {
+  width: 100%;
+}

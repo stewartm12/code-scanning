@@ -1,0 +1,166 @@
+body {
+  font-family: $ssp;
+}
+
+.app {
+  height: 100vh;
+}
+.splash-footer {
+  background-color: $background-blue;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.footer {
+  background-color: $background-blue;
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 100px;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
+
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  align-items: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  
+  #footer-logo {
+    width: 140px;
+  }
+
+  span {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: $text;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 18px;
+  color: $sub-text;
+}
+
+.bio-container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bio-footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.creator-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+
+.bio-links-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.creator-name {
+  white-space: nowrap;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer-hype-link {
+  color: white;
+  font-size: medium;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid $background-blue;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .bio-footer-content {
+    display: block;
+  }
+
+  .footer-column {
+    margin: 10px;
+  }
+
+  .footer-column > span {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .footer-hype-link {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .creator-name {
+    font-size: 120%;
+  }
+}
